@@ -67,3 +67,7 @@ Traceback (most recent call last):
 jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
 2018-12-21 01:21:22,402 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
 2018-12-21 01:22:40,906 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 21:50:48,699 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 22:03:19,334 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:48]
+2018-12-21 22:23:47,136 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:48]
+2018-12-21 22:28:08,545 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:48]

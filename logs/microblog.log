@@ -74,3 +74,51 @@ jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You p
 2018-12-22 00:31:40,236 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:48]
 2018-12-22 01:14:02,074 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:50]
 2018-12-23 18:21:02,656 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:52]
+2018-12-23 23:13:54,154 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-23 23:13:59,035 ERROR: Exception on / [GET] [in /Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1811, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2087, in preprocess_request
+    rv = func()
+  File "/Users/markbalazon/microblog/app/routes.py", line 95, in before_request
+    g.locale = str(get_locale())
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_babel/__init__.py", line 257, in get_locale
+    rv = babel.locale_selector_func()
+  File "/Users/markbalazon/microblog/app/__init__.py", line 59, in get_locale
+    return request.accept_languages.best_match(app.config['Languages'])
+KeyError: 'Languages'
+2018-12-23 23:13:59,943 ERROR: Exception on /favicon.ico [GET] [in /Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1811, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2087, in preprocess_request
+    rv = func()
+  File "/Users/markbalazon/microblog/app/routes.py", line 95, in before_request
+    g.locale = str(get_locale())
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_babel/__init__.py", line 257, in get_locale
+    rv = babel.locale_selector_func()
+  File "/Users/markbalazon/microblog/app/__init__.py", line 59, in get_locale
+    return request.accept_languages.best_match(app.config['Languages'])
+KeyError: 'Languages'
+2018-12-23 23:14:35,217 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-23 23:15:17,410 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-23 23:19:54,756 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-23 23:20:11,843 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-23 23:21:18,963 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]

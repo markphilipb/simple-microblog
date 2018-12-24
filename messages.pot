@@ -1,0 +1,232 @@
+# Translations template for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-12-23 22:50-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: app/forms.py:9 app/forms.py:16 app/forms.py:34
+msgid "Username"
+msgstr ""
+
+#: app/forms.py:10 app/forms.py:18 app/forms.py:60
+msgid "Password"
+msgstr ""
+
+#: app/forms.py:11
+msgid "Remember Me"
+msgstr ""
+
+#: app/forms.py:12 app/routes.py:53 app/templates/login.html:5
+msgid "Sign In"
+msgstr ""
+
+#: app/forms.py:17 app/forms.py:55
+msgid "Email"
+msgstr ""
+
+#: app/forms.py:19 app/forms.py:62
+msgid "Repeat Password"
+msgstr ""
+
+#: app/forms.py:20 app/routes.py:74 app/templates/register.html:6
+msgid "Register"
+msgstr ""
+
+#: app/forms.py:25
+msgid "Please choose a different username"
+msgstr ""
+
+#: app/forms.py:30
+msgid "Please use a different email address"
+msgstr ""
+
+#: app/forms.py:35
+msgid "About me"
+msgstr ""
+
+#: app/forms.py:36
+msgid "Save"
+msgstr ""
+
+#: app/forms.py:46
+msgid "Please use a different username."
+msgstr ""
+
+#: app/forms.py:50
+msgid "Say Something"
+msgstr ""
+
+#: app/forms.py:51
+msgid "Post"
+msgstr ""
+
+#: app/forms.py:56 app/forms.py:63
+msgid "Request Password Reset"
+msgstr ""
+
+#: app/myemail.py:22
+msgid "[Microblog] Reset Your Password"
+msgstr ""
+
+#: app/routes.py:22
+msgid "Posted!"
+msgstr ""
+
+#: app/routes.py:31 app/templates/base.html:21
+msgid "Home"
+msgstr ""
+
+#: app/routes.py:46
+msgid "Invalid username or password"
+msgstr ""
+
+#: app/routes.py:72
+msgid "Registration Successful"
+msgstr ""
+
+#: app/routes.py:106
+msgid "Your changes have been saved."
+msgstr ""
+
+#: app/routes.py:111 app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr ""
+
+#: app/routes.py:120 app/routes.py:136
+#, python-format
+msgid "User %(username)s not found."
+msgstr ""
+
+#: app/routes.py:123 app/routes.py:139
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: app/routes.py:127
+#, python-format
+msgid "You are following %(username)s!"
+msgstr ""
+
+#: app/routes.py:143
+#, python-format
+msgid "You unfollowed %(username)s."
+msgstr ""
+
+#: app/routes.py:157 app/templates/base.html:22
+msgid "Explore"
+msgstr ""
+
+#: app/routes.py:172
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: app/routes.py:175 app/templates/reset_password_request.html:5
+msgid "Reset Password"
+msgstr ""
+
+#: app/routes.py:189
+msgid "Your password has been reset."
+msgstr ""
+
+#: app/templates/404.html:4
+msgid "Not Found"
+msgstr ""
+
+#: app/templates/404.html:5 app/templates/500.html:6
+msgid "Back"
+msgstr ""
+
+#: app/templates/500.html:4
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: app/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr ""
+
+#: app/templates/base.html:4
+msgid "Welcome to Microblog"
+msgstr ""
+
+#: app/templates/base.html:26
+msgid "Login"
+msgstr ""
+
+#: app/templates/base.html:28
+msgid "Profile"
+msgstr ""
+
+#: app/templates/base.html:29
+msgid "Logout"
+msgstr ""
+
+#: app/templates/index.html:6
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr ""
+
+#: app/templates/index.html:18 app/templates/user.html:29
+msgid "Newer posts"
+msgstr ""
+
+#: app/templates/index.html:23 app/templates/user.html:34
+msgid "Older posts"
+msgstr ""
+
+#: app/templates/login.html:11
+msgid "New User?"
+msgstr ""
+
+#: app/templates/login.html:11
+msgid "Click to Register!"
+msgstr ""
+
+#: app/templates/login.html:13
+msgid "Forgot Your Password?"
+msgstr ""
+
+#: app/templates/login.html:14
+msgid "Click to Reset It"
+msgstr ""
+
+#: app/templates/reset_password.html:5
+msgid "Reset Your Password"
+msgstr ""
+
+#: app/templates/user.html:8
+msgid "User"
+msgstr ""
+
+#: app/templates/user.html:10
+msgid "Last seen on"
+msgstr ""
+
+#: app/templates/user.html:12
+msgid "Edit your profile"
+msgstr ""
+
+#: app/templates/user.html:14
+msgid "Follow"
+msgstr ""
+
+#: app/templates/user.html:16
+msgid "Unfollow"
+msgstr ""
+

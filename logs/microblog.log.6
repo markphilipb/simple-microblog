@@ -1,0 +1,91 @@
+2018-12-20 02:17:06,224 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-20 02:32:41,378 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-20 02:37:11,975 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-20 16:42:26,710 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-20 17:18:53,568 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-20 17:19:16,052 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-20 18:21:52,855 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-20 18:39:35,468 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-20 18:39:44,928 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 00:10:39,596 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 00:46:31,052 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 00:57:31,117 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 00:58:32,756 ERROR: Exception on /explore [GET] [in /Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/markbalazon/microblog/app/routes.py", line 138, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/markbalazon/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/markbalazon/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/markbalazon/microblog/app/templates/index.html", line 18, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2018-12-21 00:58:42,770 ERROR: Exception on /explore [GET] [in /Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/markbalazon/microblog/app/routes.py", line 138, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/markbalazon/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/markbalazon/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/markbalazon/microblog/app/templates/index.html", line 18, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2018-12-21 00:59:15,865 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 01:00:33,886 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 01:12:18,282 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 01:14:48,125 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+2018-12-21 01:20:12,906 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]

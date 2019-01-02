@@ -1,33 +1,50 @@
-2018-12-20 02:17:06,224 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-20 02:32:41,378 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-20 02:37:11,975 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-20 16:42:26,710 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-20 17:18:53,568 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-20 17:19:16,052 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-20 18:21:52,855 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-20 18:39:35,468 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-20 18:39:44,928 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-21 00:10:39,596 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-21 00:46:31,052 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-21 00:57:31,117 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-21 00:58:32,756 ERROR: Exception on /explore [GET] [in /Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py:1761]
+2018-12-26 16:23:39,086 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 16:23:49,044 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 18:14:10,202 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 18:28:46,473 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 18:41:17,473 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 19:00:00,626 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 19:03:05,686 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 19:07:42,247 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 19:08:42,411 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 19:12:47,846 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 19:14:48,548 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 19:45:53,670 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-26 19:50:10,025 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-27 00:53:41,007 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2018-12-27 00:58:58,552 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2019-01-01 17:41:27,859 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2019-01-01 17:45:38,031 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2019-01-01 19:07:39,742 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-01 19:18:17,826 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-01 19:24:34,558 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-01 19:24:36,890 ERROR: Exception on /login [GET] [in /Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
   File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/markbalazon/microblog/app/routes.py", line 138, in explore
-    return render_template('index.html', title='Explore', posts=posts)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1713, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1644, in handle_http_exception
+    return handler(e)
+  File "/Users/markbalazon/microblog/app/errors/handlers.py", line 8, in not_found_error
+    return render_template('errors/404.html'), 404
   File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
     context, ctx.app)
   File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
@@ -40,52 +57,28 @@ Traceback (most recent call last):
     reraise(exc_type, exc_value, tb)
   File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
     raise value.with_traceback(tb)
-  File "/Users/markbalazon/microblog/app/templates/index.html", line 1, in top-level template code
+  File "/Users/markbalazon/microblog/app/templates/errors/404.html", line 1, in top-level template code
     {% extends "base.html" %}
-  File "/Users/markbalazon/microblog/app/templates/base.html", line 31, in top-level template code
-    {% block content %}{% endblock %}
-  File "/Users/markbalazon/microblog/app/templates/index.html", line 18, in block "content"
-    {% for post in posts %}
-TypeError: 'Pagination' object is not iterable
-2018-12-21 00:58:42,770 ERROR: Exception on /explore [GET] [in /Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+  File "/Users/markbalazon/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block "body"
+    {% block navbar %}
+  File "/Users/markbalazon/microblog/app/templates/base.html", line 17, in block "navbar"
+    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2061, in handle_url_build_error
     reraise(exc_type, exc_value, tb)
   File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
     raise value
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/markbalazon/microblog/app/routes.py", line 138, in explore
-    return render_template('index.html', title='Explore', posts=posts)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
-    context, ctx.app)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
-    rv = template.render(context)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
-    return original_render(self, *args, **kwargs)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
-    return self.environment.handle_exception(exc_info, True)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
-    raise value.with_traceback(tb)
-  File "/Users/markbalazon/microblog/app/templates/index.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "/Users/markbalazon/microblog/app/templates/base.html", line 31, in top-level template code
-    {% block content %}{% endblock %}
-  File "/Users/markbalazon/microblog/app/templates/index.html", line 18, in block "content"
-    {% for post in posts %}
-TypeError: 'Pagination' object is not iterable
-2018-12-21 00:59:15,865 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-21 01:00:33,886 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-21 01:12:18,282 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-21 01:14:48,125 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
-2018-12-21 01:20:12,906 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:46]
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?

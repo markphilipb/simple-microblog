@@ -1,17 +1,68 @@
-2018-12-26 16:23:39,086 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 16:23:49,044 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 18:14:10,202 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 18:28:46,473 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 18:41:17,473 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 19:00:00,626 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 19:03:05,686 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 19:07:42,247 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 19:08:42,411 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 19:12:47,846 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 19:14:48,548 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 19:45:53,670 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-26 19:50:10,025 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-27 00:53:41,007 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2018-12-27 00:58:58,552 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2019-01-01 17:41:27,859 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
-2019-01-01 17:45:38,031 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:54]
+2019-01-01 19:40:30,059 ERROR: Exception on / [GET] [in /Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/markbalazon/microblog/app/main/routes.py", line 46, in index
+    prev_url=prev_url)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/markbalazon/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/markbalazon/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/Users/markbalazon/microblog/app/templates/base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/markbalazon/microblog/app/templates/index.html", line 12, in block "app_content"
+    {% include '_post.html' %}
+  File "/Users/markbalazon/microblog/app/templates/_post.html", line 4, in top-level template code
+    <a href="{{ url_for('user', username=post.author.username) }}">
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/Users/markbalazon/microblog/venvv/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'user' with values ['username']. Did you mean 'main.user' instead?
+2019-01-01 19:45:07,971 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-02 01:55:57,377 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-02 02:00:09,143 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-02 02:04:08,593 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-02 02:07:28,694 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-02 02:08:00,531 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-02 02:08:48,465 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-02 02:09:14,386 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
+2019-01-02 02:09:36,169 INFO: Microblog startup [in /Users/markbalazon/microblog/app/__init__.py:77]
